@@ -309,6 +309,9 @@ p {
     @media screen and (max-width: 800px) {
       .header .header-text {
         margin-top: 90px; } }
+    @media screen and (max-width: 360px) {
+      .header .header-text {
+        margin-top: 60px; } }
   .header .text-head {
     line-height: 50px;
     margin-top: 25px; }
@@ -395,6 +398,7 @@ p {
     height: 60px;
     border-radius: 30px;
     border: 1px solid #f3e3d2;
+    outline: none;
     background-color: #fdf6ef;
     color: #8f7c69;
     font-family: FuturaPT-Book;
@@ -417,6 +421,9 @@ p {
       position: absolute;
       border: none;
       outline: none; }
+      @media screen and (max-width: 768px) {
+        .section-holiday .search-btn {
+          display: none; } }
       .section-holiday .search-btn:before {
         position: absolute;
         content: url("../img/search.png");
@@ -583,10 +590,19 @@ p {
       content: "..........................."; }
     .menu-items:nth-child(3):after {
       content: "................"; }
+      @media screen and (max-width: 768px) {
+        .menu-items:nth-child(3):after {
+          content: "..............."; } }
     .menu-items:nth-child(4):after {
       content: "..................."; }
+      @media screen and (max-width: 768px) {
+        .menu-items:nth-child(4):after {
+          content: ".................."; } }
     .menu-items:nth-child(5):after {
       content: "..............................."; }
+      @media screen and (max-width: 768px) {
+        .menu-items:nth-child(5):after {
+          content: "................................"; } }
     .menu-items:hover:before {
       position: absolute;
       content: "" !important;
