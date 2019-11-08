@@ -1,0 +1,121 @@
+.footer {
+  padding-bottom: 68px;
+  margin-top: 295px;
+  position: relative;
+  @media screen and (max-width: 1200px) {
+    margin-top: 200px;
+  }
+  @media screen and (max-width: 800px) {
+    margin-top: 150px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 110px;
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width: 360px) {
+    margin-top: 90px;
+  }
+  &-bg {
+    position: absolute;
+    background-image: url(../img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 622px;
+    bottom: 0;
+    z-index: -1;
+    @media screen and (max-width: 800px) {
+      background-size: 275%;
+      background-position: bottom;
+    }
+    @media screen and (max-width: 768px) {
+      background-size: 290%;
+    }
+    @media screen and (max-width: 640px) {
+      background-size: 345%;
+    }
+    @media screen and (max-width: 480px) {
+      background-size: 290%;
+    }
+    @media screen and (max-width: 360px) {
+      background-size: 370%;
+    }
+    @media screen and (max-width: 320px) {
+      background-size: 430%;
+    }
+  }
+  .inner-footer {
+    @media screen and (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+  }
+  .text-organization {
+    color: #515050;
+    font-family: FuturaPT-Book;
+    font-size: 17px;
+    float: left;
+    @media screen and (max-width: 800px) {
+      margin: 20px 0 -20px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+  .wrap-menu {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 800px) {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  .menu-footer-items {
+    color: #5f5953;
+    font-family: FuturaPT-Medium;
+    font-size: 17px;
+    margin-bottom: 15px;
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 5px;
+    }
+  }
+  .menu-footer-link {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+    }
+    &:hover {
+      &:before {
+        background: #000;
+      }
+    }
+  }
+  .show {
+    display: none;
+    @media screen and (max-width: 360px) {
+      display: block;
+    }
+  }
+  .hide {
+    display: block;
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
+  }
+  .none {
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
+  }
+}
