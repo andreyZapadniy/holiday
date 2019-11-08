@@ -27,6 +27,9 @@
       margin-bottom: 20px;
     }
   }
+  .form {
+    position: relative;
+  }
   .search {
     width: 840px;
     height: 60px;
@@ -148,7 +151,7 @@
   @media screen and (max-width: 1200px) {
     margin-top: 20px;
     margin-left: 0;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
   }
   @media screen and (max-width: 360px) {

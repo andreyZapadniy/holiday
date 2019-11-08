@@ -388,6 +388,8 @@ p {
   @media screen and (max-width: 1200px) {
     .section-holiday .wrap-text {
       margin-bottom: 20px; } }
+  .section-holiday .form {
+    position: relative; }
   .section-holiday .search {
     width: 840px;
     height: 60px;
@@ -518,9 +520,8 @@ p {
     .menu {
       margin-top: 20px;
       margin-left: 0;
-      -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
       width: 100%; } }
   @media screen and (max-width: 360px) {
     .menu {
